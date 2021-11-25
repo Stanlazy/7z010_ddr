@@ -104,7 +104,7 @@ NoConn ~ 6250 7500
 NoConn ~ 6250 3400
 NoConn ~ 6250 3500
 $Comp
-L 7z010_ddr-rescue:VCC_DDR-power #PWR021
+L 7z010_ddr:VCC_DDR-power #PWR021
 U 1 1 614A8783
 P 6250 8400
 F 0 "#PWR021" H 6250 8250 50  0001 C CNN
@@ -148,7 +148,7 @@ F 3 "~" H 5950 8200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 7z010_ddr-rescue:VCC_DDR-power #PWR017
+L 7z010_ddr:VCC_DDR-power #PWR017
 U 1 1 614B9E1D
 P 5800 8100
 F 0 "#PWR017" H 5800 7950 50  0001 C CNN
@@ -210,7 +210,7 @@ Wire Wire Line
 Wire Wire Line
 	2200 5700 2100 5700
 $Comp
-L 7z010_ddr-rescue:VCC_DDR-power #PWR08
+L 7z010_ddr:VCC_DDR-power #PWR08
 U 1 1 6148CC94
 P 2100 5600
 F 0 "#PWR08" H 2100 5450 50  0001 C CNN
@@ -237,7 +237,7 @@ DDR_CK-
 Text GLabel 1500 7900 0    50   Input ~ 0
 DDR_CK+
 $Comp
-L Memory_RAM:AS4C256M16D3 U1
+L 7z010_ddr:AS4C256M16D3 U1
 U 1 1 615174BF
 P 2200 7400
 F 0 "U1" H 2700 6150 50  0000 C CNN
@@ -349,7 +349,7 @@ $EndComp
 Wire Wire Line
 	2900 8400 3050 8400
 $Comp
-L xilinx7:xc7z010clg400 U2
+L 7z010_ddr:xc7z010clg400 U2
 U 7 1 614B1DEB
 P 6250 900
 F 0 "U2" H 6450 1100 60  0000 L CNN
@@ -361,7 +361,7 @@ F 4 "xc7z010clg400" H 6450 650 60  0001 L CNN "desc"
 	1    0    0    -1  
 $EndComp
 $Comp
-L 7z010_ddr-rescue:VREF_DDR-power #PWR019
+L 7z010_ddr:VREF_DDR-power #PWR019
 U 1 1 61654CD5
 P 6250 7900
 F 0 "#PWR019" H 6250 7750 50  0001 C CNN
@@ -372,7 +372,7 @@ F 3 "" H 6250 7900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L 7z010_ddr-rescue:VREF_DDR-power #PWR020
+L 7z010_ddr:VREF_DDR-power #PWR020
 U 1 1 6165757C
 P 6250 8000
 F 0 "#PWR020" H 6250 7850 50  0001 C CNN
@@ -383,7 +383,7 @@ F 3 "" H 6250 8000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L 7z010_ddr-rescue:VREF_DDR-power #PWR010
+L 7z010_ddr:VREF_DDR-power #PWR010
 U 1 1 6165797F
 P 2300 5700
 F 0 "#PWR010" H 2300 5550 50  0001 C CNN
@@ -393,7 +393,6 @@ F 3 "" H 2300 5700 50  0001 C CNN
 	1    2300 5700
 	1    0    0    -1  
 $EndComp
-Connection ~ 2300 5700
 Wire Wire Line
 	1500 850  1300 850 
 Wire Wire Line
@@ -510,9 +509,8 @@ Wire Wire Line
 	1300 3050 1300 2950
 Wire Wire Line
 	1300 3150 1300 3050
-Connection ~ 1300 850 
 $Comp
-L 7z010_ddr-rescue:VTT_DDR-power #PWR01
+L 7z010_ddr:VTT_DDR-power #PWR01
 U 1 1 6150C0BF
 P 1300 850
 F 0 "#PWR01" H 1300 700 50  0001 C CNN
@@ -545,7 +543,7 @@ F 3 "~" H 1450 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 7z010_ddr-rescue:VCC_DDR-power #PWR06
+L 7z010_ddr:VCC_DDR-power #PWR06
 U 1 1 6154A9DE
 P 1300 4950
 F 0 "#PWR06" H 1300 4800 50  0001 C CNN
@@ -557,7 +555,6 @@ F 3 "" H 1300 4950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1300 4950 1450 4950
-Connection ~ 1300 4950
 Wire Wire Line
 	1300 5150 1450 5150
 $Comp
@@ -573,7 +570,7 @@ F 3 "" H 1300 5150 50  0001 C CNN
 $EndComp
 Connection ~ 1300 5150
 $Comp
-L 7z010_ddr-rescue:VREF_DDR-power #PWR014
+L 7z010_ddr:VREF_DDR-power #PWR014
 U 1 1 615E5283
 P 3150 1900
 F 0 "#PWR014" H 3150 1750 50  0001 C CNN
@@ -599,7 +596,7 @@ Wire Wire Line
 Wire Wire Line
 	3150 2100 3300 2100
 $Comp
-L 7z010_ddr-rescue:VTT_DDR-power #PWR02
+L 7z010_ddr:VTT_DDR-power #PWR02
 U 1 1 616C970F
 P 1300 3550
 F 0 "#PWR02" H 1300 3400 50  0001 C CNN
@@ -764,7 +761,7 @@ F 3 "~" H 2250 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 7z010_ddr-rescue:VCC_DDR-power #PWR04
+L 7z010_ddr:VCC_DDR-power #PWR04
 U 1 1 617B0423
 P 1300 4300
 F 0 "#PWR04" H 1300 4150 50  0001 C CNN
@@ -776,7 +773,6 @@ F 3 "" H 1300 4300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1300 4300 1450 4300
-Connection ~ 1300 4300
 Connection ~ 1450 4300
 Connection ~ 1600 4300
 Wire Wire Line
@@ -806,7 +802,7 @@ F 3 "" H 1300 4500 50  0001 C CNN
 $EndComp
 Connection ~ 1300 4500
 $Comp
-L 7z010_ddr-rescue:VREF_DDR-power #PWR011
+L 7z010_ddr:VREF_DDR-power #PWR011
 U 1 1 617DE011
 P 2650 1900
 F 0 "#PWR011" H 2650 1750 50  0001 C CNN
@@ -853,9 +849,7 @@ F 3 "~" H 2800 2000 50  0001 C CNN
 	1    2800 2000
 	1    0    0    -1  
 $EndComp
-Connection ~ 3150 1900
 Connection ~ 3150 2100
-Connection ~ 2650 1900
 Connection ~ 2650 2100
 Text GLabel 1900 2150 2    50   Input ~ 0
 DDR_A0
@@ -1181,7 +1175,6 @@ Wire Wire Line
 	2300 3850 2100 3850
 Wire Wire Line
 	1300 3600 1300 3550
-Connection ~ 1300 3550
 Wire Wire Line
 	1300 3800 1300 3850
 Connection ~ 1300 3850
@@ -1431,7 +1424,7 @@ U 8 1 619FCFE9
 P 6250 8600
 F 0 "U2" H 7080 8353 60  0000 L CNN
 F 1 "xc7z010clg400" H 7080 8247 60  0000 L CNN
-F 2 "" H 6450 8650 60  0001 L CNN
+F 2 "Package_BGA:Xilinx_CLG400_NoPaste_JLC_Package_Delay" H 6450 8650 60  0001 L CNN
 F 3 "" H 6450 8450 60  0001 L CNN
 F 4 "xc7z010clg400" H 6450 8350 60  0001 L CNN "desc"
 	8    6250 8600
