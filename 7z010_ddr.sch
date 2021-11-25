@@ -1419,7 +1419,7 @@ Connection ~ 3300 2100
 Text Notes 600  10500 0    100  ~ 0
 There are 3 power rails\nVTT_DDR\nVREF_DDR\nVCC_DDR
 $Comp
-L xilinx7:xc7z010clg400 U2
+L 7z010_ddr:xc7z010clg400 U2
 U 8 1 619FCFE9
 P 6250 8600
 F 0 "U2" H 7080 8353 60  0000 L CNN
