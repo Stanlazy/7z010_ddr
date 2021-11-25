@@ -1447,4 +1447,9 @@ NoConn ~ 6250 8900
 NoConn ~ 6250 9000
 NoConn ~ 6250 9100
 NoConn ~ 6250 9200
+Connection ~ 3150 1900
+Connection ~ 2650 1900
+Connection ~ 1300 3550
+Connection ~ 1300 4300
+Connection ~ 1300 4950
 $EndSCHEMATC
